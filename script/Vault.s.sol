@@ -5,6 +5,8 @@ import {MockUSDC} from "../src/MockUSDC.sol";
 
 
 contract VaultScript is Script{
+    // Vault deployed at: 0x9Ab8A6eC3E481700f6d0e4F4b7a6F61367664056
+    // USDC address used: 0xfafA73cb6AC7A08C15310d2606761328176f02F1
    Vault public vault; 
     function setUp() public {
 
@@ -19,7 +21,7 @@ contract VaultScript is Script{
         console.log("Vault deployed at:", address(vault));
         console.log("USDC address used:", address(usdc));
 
-        vm.stopBroadcast();
+        vm.stopBroadcast(); 
     } 
 
 }
